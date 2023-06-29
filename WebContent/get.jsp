@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Single Employee Data</title>
+<title>Insert title here</title>
 
 
 <style type="text/css">
@@ -151,6 +151,10 @@ form .button input:hover {
 	background: linear-gradient(-135deg, #71b7e6, #9b59b6);
 }
 
+table{  
+border-collapse: collapse;
+}
+
 @media ( max-width : 584px) {
 	.container {
 		max-width: 100%;
@@ -179,30 +183,48 @@ form .button input:hover {
 </style>
 </head>
 <body>
+
 	<div class="container">
+	
 		<div class="title">Select Employee Details</div>
 		<div class="content">
-			<form action="showdata">
+			<form action="get">
 				<div class="user-details">
 					<div class="input-box">
 						<span class="details">Employee Id</span> <input type="text"
-							placeholder="Enter your Id here" name="Id" required>
+							placeholder="Enter your Id here" name="id" required>
 					</div>
-				
+
 				</div>
 
 				<div class="button">
-					<input type="submit" value="Select Employee By id">
+					<input type="submit" value="Select Employee">
 				</div>
 			</form>
+			<table border="1" align="center">
+		<tr>
+			<th>Id</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Email</th>
+			<th>Address</th>
+			<th>Pincode</th>
+		</tr>
+
+		<tr>
+			<td>${id}</td>
+			<td>${Firstname}</td>
+			<td>${Lastname}</td>
+			<td>${Email}</td>
+			<td>${Address}</td>
+			<td>${Pincode}</td>
+		</tr>
+
+	</table>
 		</div>
 	</div>
 
-
- 
- 
-
-
+	
 
 
 </body>
