@@ -38,13 +38,13 @@
 	</servlet-mapping>
 
 	<servlet>
-		<servlet-name>Single Employee data</servlet-name>
-		<servlet-class>P.com.Selectdata</servlet-class>
+		<servlet-name>3</servlet-name>
+		<servlet-class>P.com.Singledata</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>Single Employee data</servlet-name>
-		<url-pattern>/Singledata</url-pattern>
+		<servlet-name>3</servlet-name>
+		<url-pattern>/get</url-pattern>
 	</servlet-mapping>
 
 
